@@ -17,8 +17,8 @@
                 CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
 
                 # Charge threshold
-                START_CHARGE_THRESH_BAT0 = "75";
-                STOP_CHARGE_THRESH_BAT0 = "80";
+                START_CHARGE_THRESH_BAT0 = "80";
+                STOP_CHARGE_THRESH_BAT0 = "85";
 
                 # Startup devices
                 DEVICES_TO_ENABLE_ON_STARTUP = "wifi";

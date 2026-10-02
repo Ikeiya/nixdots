@@ -23,7 +23,7 @@
     networking.networkmanager.enable = true;
 
 # Set your time zone
-    time.timeZone = "Asia/Hong_Kong";
+    time.timeZone = "Europe/London";
 
 # Select internationalisation properties
     i18n.defaultLocale = "en_GB.UTF-8";
@@ -58,6 +58,12 @@
 # Text editor
       neovim
       vscodium
+
+# Libreoffice
+      libreoffice-qt
+      hunspell
+      hunspellDicts.uk_UA
+      hunspellDicts.th_TH
 
 # Browsers
       wget

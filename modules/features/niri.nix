@@ -91,6 +91,7 @@
 
           "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
           "Mod+Shift+E".quit = _:{};
+          "Ctrl+Alt+Delete".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call session toggle";
         };
       };
     };
