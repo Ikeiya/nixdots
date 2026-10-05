@@ -49,10 +49,12 @@
           "Mod+F".maximize-column = _:{};
           "Mod+G".fullscreen-window = _:{};
 
+/*
           "Mod+H".focus-column-left = _:{};
           "Mod+L".focus-column-right = _:{};
           "Mod+K".focus-window-up = _:{};
           "Mod+J".focus-window-down = _:{};
+*/
 
           "Mod+Left".focus-column-left = _:{};
           "Mod+Right".focus-column-right = _:{};
@@ -91,7 +93,8 @@
 
           "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
           "Mod+Shift+E".quit = _:{};
-          "Ctrl+Alt+Delete".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call session toggle";
+          "Mod+L".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call sessionMenu lock";
+          "Ctrl+Alt+Delete".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call sessionMenu toggle";
         };
       };
     };
