@@ -6,6 +6,7 @@
       self.nixosModules.niri
       self.nixosModules.tlp
       self.nixosModules.desktop
+      self.nixosModules.qylock
     ];
 
 # Allow flakes

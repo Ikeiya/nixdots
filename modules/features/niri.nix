@@ -91,10 +91,16 @@
           "Mod+Alt+9".move-column-to-workspace = 9;
           "Mod+Alt+0".move-column-to-workspace = 0;
 
+          /* Noctalia */
+
           "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
           "Mod+Shift+E".quit = _:{};
           "Mod+L".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call sessionMenu lock";
           "Ctrl+Alt+Delete".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call sessionMenu toggle";
+
+          /* Flameshot */
+          
+          # "Mod+Shift+S".spawn-sh = "${lib.getExe} pkgs.flameshot/bin/flameshot gui";  
         };
       };
     };
