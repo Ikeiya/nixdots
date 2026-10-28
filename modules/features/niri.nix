@@ -42,7 +42,7 @@
 
         binds = {
           "Mod+T".spawn-sh = lib.getExe pkgs.alacritty;
-          "Mod+Return".spawn-sh = lib.getExe pkgs.alacritty;
+          "Mod+Return".spawn-sh = lib.getExe pkgs.enlightenment.terminology;
           "Ctrl+Return".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
 
           "Mod+Q".close-window = _:{};

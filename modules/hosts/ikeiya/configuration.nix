@@ -54,11 +54,15 @@
 
 # Terminal
       alacritty
+      enlightenment.terminology
       kdePackages.dolphin
 
 # Text editor
       neovim
       vscodium
+
+# Image editor
+      gimp
 
 # Libreoffice
       libreoffice-qt
@@ -75,13 +79,27 @@
       git
       p7zip
       peazip
+      fastfetch
       keepassxc
+      qalculate-gtk
+      syncthing
+      mullvad-vpn
+      btop
 
 # Social
       vesktop
+      telegram-desktop
 
 # Entertainment
       steam
+
+# Music
+      musicpresence
+      feishin
+      tauon
+
+# Books
+      calibre
     ];
 
     programs.steam.enable = true;
