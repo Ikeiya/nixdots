@@ -42,8 +42,7 @@
 
         binds = {
           "Mod+T".spawn-sh = lib.getExe pkgs.alacritty;
-          "Mod+Return".spawn-sh = lib.getExe pkgs.enlightenment.terminology;
-          "Ctrl+Return".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
+          "Mod+Return".spawn-sh = lib.getExe pkgs.alacritty;
 
           "Mod+Q".close-window = _:{};
           "Mod+F".maximize-column = _:{};
@@ -93,14 +92,15 @@
 
           /* Noctalia */
 
-          "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
+          "Ctrl+Return".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
           "Mod+Shift+E".quit = _:{};
           "Mod+L".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call sessionMenu lock";
           "Ctrl+Alt+Delete".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call sessionMenu toggle";
+          "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call screenshot-region toggle";
 
           /* Flameshot */
           
-          # "Mod+Shift+S".spawn-sh = "${lib.getExe} pkgs.flameshot/bin/flameshot gui";  
+          "Mod+Shift+S".spawn-sh = "exec flameshot gui";
         };
       };
     };

@@ -7,6 +7,7 @@
       self.nixosModules.tlp
       self.nixosModules.desktop
       self.nixosModules.qylock
+      self.nixosModules.flameshot
     ];
 
 # Allow flakes
@@ -55,6 +56,7 @@
 # Terminal
       alacritty
       enlightenment.terminology
+      kitty
       kdePackages.dolphin
 
 # Text editor
@@ -74,17 +76,26 @@
       wget
       librewolf
       ungoogled-chromium
+      mullvad-vpn
 
 # Util
-      git
-      p7zip
-      peazip
+      btop
       fastfetch
       keepassxc
       qalculate-gtk
-      syncthing
-      mullvad-vpn
-      btop
+      freefilesync
+      gparted
+      flameshot
+      grim
+      slurp
+      shotman
+
+# Compression
+      p7zip
+      peazip
+
+# Coding tools
+      git
 
 # Social
       vesktop
